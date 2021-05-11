@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AndrewCasey_S00200841
 {
-    class Game
+    public class Game
     {
         public int ID { get; set; } // PK
         public string Name { get; set; }
@@ -33,10 +33,17 @@ namespace AndrewCasey_S00200841
             return Name;
         }
 
-        // Decrease price is just set up quick till i need to test i will work out then
+        // Decrease price could most likely be done another way
         public void DecreasePrice(double decrease)
         {
-            Price /= (decimal)(decrease + 1);
+            // holding Price
+            decimal holder = Price;
+            // Find Percentage amount taken from Price
+            holder *= (decimal)(decrease);
+            // Decrease it from Price
+            Price -= (holder);
+            // Round Price by 2 decimal place to ensure we get a price rather than ex(45.9435... etc)
+            Price = Decimal.Round(Price, 2, MidpointRounding.AwayFromZero);
         }
     }
 }
