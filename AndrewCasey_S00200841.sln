@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndrewCasey_S00200841", "An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject_Game", "UnitTestProject_Game\UnitTestProject_Game.csproj", "{0BB9DDB5-EB56-49F4-9D2F-B03E650FFFCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataManagement", "DataManagement\DataManagement.csproj", "{9FF75C72-DECF-41B8-9DBE-023D5A6F7B9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0BB9DDB5-EB56-49F4-9D2F-B03E650FFFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BB9DDB5-EB56-49F4-9D2F-B03E650FFFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BB9DDB5-EB56-49F4-9D2F-B03E650FFFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF75C72-DECF-41B8-9DBE-023D5A6F7B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF75C72-DECF-41B8-9DBE-023D5A6F7B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF75C72-DECF-41B8-9DBE-023D5A6F7B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF75C72-DECF-41B8-9DBE-023D5A6F7B9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

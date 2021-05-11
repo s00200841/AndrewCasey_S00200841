@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace AndrewCasey_S00200841
 {
     public class Game
     {
+        // Properties
         public int ID { get; set; } // PK
         public string Name { get; set; }
         public int MetacriticScore { get; set; }
@@ -27,7 +29,7 @@ namespace AndrewCasey_S00200841
             Platform = platform;
             Price = price;
         }
-
+        // Standard ToString will just return Name
         public override string ToString()
         {
             return Name;
@@ -45,5 +47,11 @@ namespace AndrewCasey_S00200841
             // Round Price by 2 decimal place to ensure we get a price rather than ex(45.9435... etc)
             Price = Decimal.Round(Price, 2, MidpointRounding.AwayFromZero);
         }
+    }
+
+    public class GameData : DbContext
+    {
+        public GameData() : base("GameDataInformation") { } // Database Name
+        public DbSet<Game> Games { get; set; } // Table Creation for Games
     }
 }
